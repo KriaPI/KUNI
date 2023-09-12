@@ -1,5 +1,5 @@
 
-add_executable(${PROJECT_NAME} source/test.c
+add_executable(${PROJECT_NAME} base/KUNI_base.c
 )
 
 # Compiler options 
