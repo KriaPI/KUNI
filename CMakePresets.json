@@ -1,0 +1,44 @@
+{
+    "version": 4,
+    "configurePresets": [
+        {
+            "name": "ci-enable-all",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "VCPKG_TARGET_TRIPLET": "x64-windows-release"
+            },
+            "binaryDir": "build",
+            "hidden": true
+        },
+        {
+            "name": "MinGW",
+            "displayName": "MinGW-w64 makefiles",
+            "inherits": ["ci-enable-all"],
+            "generator": "MinGW Makefiles"
+        }, 
+        {
+            "name": "MSVC22",
+            "displayName": "Visual studio 17 2022",
+            "inherits": ["ci-enable-all"],
+            "generator": "Visual Studio 17 2022"
+        },
+        {
+            "name": "GCC",
+            "displayName": "Unix Makefiles",
+            "inherits": ["ci-enable-all"],
+            "generator": "Unix Makefiles"
+        },
+        {
+            "name": "Clang",
+            "displayName": "Unix Makefiles",
+            "inherits": ["ci-enable-all"],
+            "generator": "Unix Makefiles"
+        },
+        {
+            "name": "Ninja",
+            "displayName": "Ninja",
+            "inherits": ["ci-enable-all"],
+            "generator": "Ninja"
+        }
+    ]
+}

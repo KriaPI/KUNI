@@ -1,0 +1,5 @@
+Checks:          'cert-env33-c,cert-err33-c,cert-err34-c,modernize-*'
+WarningsAsErrors: true
+HeaderFilterRegex: ''
+AnalyzeTemporaryDtors: false
+FormatStyle:     google
