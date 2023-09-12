@@ -1,6 +1,8 @@
 #ifndef KUNI_H
 #define KUNI_H
 
+// TODO: format with clang-format
+
 // Enumeration types
 
 typedef enum KUNI_STATUS {
