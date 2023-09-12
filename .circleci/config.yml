@@ -1,1 +1,13 @@
+version: 2.1
 
+executors:
+  my-executor:
+    docker:
+      - image: cimg/base:2023.09 
+    
+jobs:
+  build:
+    executor: my-executor
+    steps:
+      - run: echo "Hello executor!"
+        
