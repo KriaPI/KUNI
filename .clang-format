@@ -1,0 +1,21 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+---
+Language: Cpp
+# Force pointers to the type for C++.
+DerivePointerAlignment: false
+PointerAlignment: Left
+# Long function calls
+AlignAfterOpenBracket: Align
+# Brace style
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterEnum: true
+    AfterFunction: true
+    AfterStruct: true
+    AfterExternBlock: true
+    AfterControlStatement: Always
+# Align assignment and declaration
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
